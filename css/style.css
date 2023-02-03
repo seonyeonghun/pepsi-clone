@@ -24,7 +24,16 @@ a {
 }
 */
 .logo {
-    width: 100px;
-    margin: 0 auto; /* 수평-중앙 배치 */
-    padding: 50px 0; /* 상,하 50픽셀 */
+  width: 100px;
+  margin: 0 auto; /* 수평-중앙 배치 */
+  padding: 50px 0; /* 상,하 50픽셀 */
+}
+.menu {
+  padding: 20px 0; /* 상,하 50픽셀 */
+  text-align: center;
+  background-color: #005891; /* 배경 색상 */
+}
+a {
+  color: white;
+  margin: 10px;
 }
