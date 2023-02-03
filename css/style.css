@@ -62,3 +62,7 @@ a {
   font-size: 16px;
   color: #555555; /* HEX 색상 표기법 */
 }
+.social {
+  text-align: center; /* 그림<--텍스트10.. */
+  margin: 2rem 1rem; /* (밖)여백 : 상하 2배, 좌우 기본값 */
+}
