@@ -66,3 +66,20 @@ a {
   text-align: center; /* 그림<--텍스트10.. */
   margin: 2rem 1rem; /* (밖)여백 : 상하 2배, 좌우 기본값 */
 }
+#line {
+  margin: 3rem 0; /* 위, 아래 3rem 좌,우 0(=적용 안함) */
+}
+.contact,
+.location {
+  /* Q. 왜? <h2 class="movie-title">과 다른가? */
+  text-align: center;
+}
+.location p:nth-child(1) {
+  /* 두개의 p중에서 첫번째 (자식요소) p */
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.location p:nth-child(2) {
+  margin-bottom: 3rem; /* 두개의 p중에서 두번째 (자식요소) p */
+  font-size: 0.9rem;
+}
