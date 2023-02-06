@@ -7,19 +7,30 @@
     <title>펩시골라</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <meta property="og:title" content="펩시 골라">
-<meta property="og:site_name" content="펩시 골라">
-<meta property="og:url" content="https://seonyeonghun.github.io/pepsi-gola-clone">
-<meta property="og:description" content="펩시 골라 아시아 지역 본부 - 광주 지사 웹사이트, 펩시골라 브랜드 홍보 및 제품 홍보, 판매처 확보 등">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://seonyeonghun.github.io/pepsi-clone/images/cover.png">
-
+    <meta property="og:title" content="펩시 골라" />
+    <meta property="og:site_name" content="펩시 골라" />
+    <meta
+      property="og:url"
+      content="https://seonyeonghun.github.io/pepsi-gola-clone"
+    />
+    <meta
+      property="og:description"
+      content="펩시 골라 아시아 지역 본부 - 광주 지사 웹사이트, 펩시골라 브랜드 홍보 및 제품 홍보, 판매처 확보 등"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://seonyeonghun.github.io/pepsi-clone/images/cover.png"
+    />
   </head>
   <body>
     <h1 class="hide">펩시골라 광주</h1>
     <div class="wrap">
       <div class="logo">
         <img src="images/logo.png" alt="펩시골라" />
+      </div>
+      <div class="burger">
+        <img src="images/icon _menu.png" alt="전체메뉴" />
       </div>
       <div class="menu">
         <a href="#">펩 시소개</a>
@@ -48,12 +59,18 @@
         <h2 class="contact-title">pepsi cs center</h2>
         <p class="contact-number">1566-3082</p>
       </div>
-      <hr id="line">
+      <hr id="line" />
       <div class="location">
         <p>광주광역시 서구 경열로 3, 펩시골라</p>
         <p>copyright(c) 2017. pepsi gola. all rights reserved</p>
       </div>
     </div>
     <!-- /.wrap -->
+    <script>
+      const burger = document.querySelector(".burger");
+      burger.addEventListener("click", function () {
+        alert("사이드 메뉴를 호출했습니다");
+      });
+    </script>
   </body>
 </html>

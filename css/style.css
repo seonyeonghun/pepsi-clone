@@ -28,6 +28,12 @@ a {
   margin: 0 auto; /* 수평-중앙 배치 */
   padding: 50px 0; /* 상,하 50픽셀 */
 }
+.burger {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 7%;
+}
 .menu {
   padding: 20px 0; /* 상,하 50픽셀 */
   text-align: center;
@@ -82,4 +88,34 @@ a {
 .location p:nth-child(2) {
   margin-bottom: 3rem; /* 두개의 p중에서 두번째 (자식요소) p */
   font-size: 0.9rem;
+}
+
+/* 반응형 웹(=모바일)을 위한 미디어쿼리 삽입(Media Query) */
+@media screen and (max-width: 430px) {
+  .burger {
+    display: block; /* block level element : 블럭요소 */
+  }
+  .menu {
+    display: none; /* 표시: 안함 */
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero img {
+    width: 100%; /* 가로 폭 : 가득채워서 */
+    object-fit: cover; /* 오브젝트-맞춤 : 알맞게(비율에 근거해서) */
+  }
+  .movie {
+    width: 100%;
+  }
+  .movie img {
+    /* 2개의 img에 적용 */
+    width: 70%;
+    margin: 10% 15%;
+    object-fit: cover;
+  }
+  .movie img:nth-of-type(2) {
+    /* 2번째 이미지는 숨김 ==> 피그마 설계를 반영 */
+    display: none;
+  }
 }
