@@ -24,15 +24,16 @@
     />
   </head>
   <body>
-    <h1 class="hide">펩시골라 광주</h1>
+    <h1 class="hide" id="title">펩시골라 광주</h1>
     <div class="wrap">
       <div class="logo">
         <img src="images/logo.png" alt="펩시골라" />
       </div>
-      <div class="burger">
+      <div class="opener">
         <img src="images/icon _menu.png" alt="전체메뉴" />
       </div>
-      <div class="menu">
+      <div class="menu hide">
+        <button id="closer">&times;</button>
         <a href="#">펩 시소개</a>
         <a href="#">콜라종류</a>
         <a href="#">갤러리</a>
@@ -66,11 +67,6 @@
       </div>
     </div>
     <!-- /.wrap -->
-    <script>
-      const burger = document.querySelector(".burger");
-      burger.addEventListener("click", function () {
-        alert("사이드 메뉴를 호출했습니다");
-      });
-    </script>
+    <script src="script/main.js"></script>
   </body>
 </html>
