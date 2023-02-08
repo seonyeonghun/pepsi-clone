@@ -58,16 +58,20 @@ a {
   margin: 0 auto;
   font-size: 0;
 }
-.movie-title {
+
+.page-title {
   font-size: 22px;
   text-align: center;
   text-transform: uppercase; /* 대문자 */
   margin: 2rem 0 1rem 0; /*  상->우->하->왼 순서 */
 }
-.movie-desc {
+.page-desc {
   text-align: center;
   font-size: 16px;
   color: #555555; /* HEX 색상 표기법 */
+}
+.tip {
+  text-align: center;
 }
 .social {
   text-align: center; /* 그림<--텍스트10.. */
