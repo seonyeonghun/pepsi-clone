@@ -73,14 +73,6 @@ a {
 .tip {
   text-align: center;
 }
-.brand-body {
-  padding: 0 30px; /* 좌우 30px */
-}
-.brand-body img {
-  width: 100%;
-  object-fit: contain;
-  margin: 30px 0; /* 상하 30px */
-}
 .social {
   text-align: center; /* 그림<--텍스트10.. */
   margin: 2rem 1rem; /* (밖)여백 : 상하 2배, 좌우 기본값 */
@@ -103,11 +95,11 @@ a {
   font-size: 0.9rem;
 }
 #closer {
+  display: none;
   font-size: 4rem;
   background-color: transparent;
   border: 0;
   color: white;
-  display: block;
   margin: 0 0 10rem 0;
   position: relative;
   top: 60px;
@@ -115,6 +107,17 @@ a {
 }
 /* 반응형 웹(=모바일)을 위한 미디어쿼리 삽입(Media Query) */
 @media screen and (max-width: 430px) {
+  #closer {
+    display: block;
+  }
+  .brand-body {
+    padding: 0 30px; /* 좌우 30px */
+  }
+  .brand-body img {
+    width: 100%;
+    object-fit: contain;
+    margin: 30px 0; /* 상하 30px */
+  }
   .opener {
     display: block; /* block level element : 블럭요소 */
   }
