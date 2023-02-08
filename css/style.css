@@ -49,6 +49,26 @@ a {
   margin: 0 auto;
   padding: 10px 0;
 }
+.brand-body {
+  max-width: 800px; /* 최대 800px, 아니라면 100% */
+  margin: 0 auto;
+}
+.body1 {
+  margin: 2rem 0 0 0;
+}
+.body1 img,
+.body3 img {
+  float: left;
+  margin: 0 1rem 0 0;
+}
+.body2 {
+  margin: 3rem 0;
+}
+.body2 img {
+  float: right;
+  margin: 0 0 0 5rem;
+}
+
 .hide {
   display: none; /* 화면 표시: 안함 */
 }
@@ -74,6 +94,7 @@ a {
   text-align: center;
 }
 .social {
+  clear: both; /* both = left + right [float 해제]*/
   text-align: center; /* 그림<--텍스트10.. */
   margin: 2rem 1rem; /* (밖)여백 : 상하 2배, 좌우 기본값 */
 }
@@ -122,7 +143,7 @@ a {
     display: block; /* block level element : 블럭요소 */
   }
   .menu {
-    position: absolute;
+    position: fixed; /* absolute vs fixed 차이 */
     width: 76.74418604651163%;
     right: 0;
     top: 0;
