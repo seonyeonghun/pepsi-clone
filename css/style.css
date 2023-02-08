@@ -73,6 +73,14 @@ a {
 .tip {
   text-align: center;
 }
+.brand-body {
+  padding: 0 30px; /* 좌우 30px */
+}
+.brand-body img {
+  width: 100%;
+  object-fit: contain;
+  margin: 30px 0; /* 상하 30px */
+}
 .social {
   text-align: center; /* 그림<--텍스트10.. */
   margin: 2rem 1rem; /* (밖)여백 : 상하 2배, 좌우 기본값 */
